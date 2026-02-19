@@ -1,3 +1,12 @@
-1.@EnableEurekaServer on Main class.
-2.Add the Dependecnies.
+1.@EnableEurekaServer on Main class
+2.Add the Dependencies
 3.Add the Application.props
+  spring.application.name=EurekaServer
+  server.port=8761
+
+  eureka.client.fetch-registry=false
+  eureka.client.register-with-eureka=false
+
+  eureka.server.enable-self-preservation=true
+  eureka.server.eviction-interval-timer-in-ms=60000
+
